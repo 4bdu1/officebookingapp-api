@@ -26,4 +26,5 @@ class UserDB(User, models.BaseUserDB):
 class UserModel(TortoiseBaseUserModel):
     first_name= fields.CharField(null= False, max_length=30)
     last_name = fields.CharField(null= False, max_length=30)
+    user_role= fields.CharField(null= False, max_length=30)
     

@@ -1,0 +1,10 @@
+version: "3.9"
+
+services:
+  bookingapp:
+    build:
+      context: ./
+      dockerfile: api.dockerfile
+    command: uvicorn  main:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "80:8000"
